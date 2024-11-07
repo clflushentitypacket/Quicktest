@@ -6,7 +6,13 @@ Instructions: Simply input signal and price dataframes and execute the report me
 
 # Backtest
 ```python
-import Quicktest
+from quicktest import Quicktest
+import pandas as pd
+```
+
+
+```python
+from quicktest import Quicktest
 import pandas as pd
 signals = pd.read_csv("momentum_signal.csv", index_col=0)
 prices = pd.read_csv("adjusted_price.csv", index_col=0)
@@ -17,6 +23,8 @@ backtest.report()
 
 
 ## Stats
+
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -29,8 +37,8 @@ backtest.report()
   <tbody>
     <tr>
       <th>Stats</th>
-      <td>0.52</td>
-      <td>27.33</td>
+      <td>0.62</td>
+      <td>25.56</td>
     </tr>
   </tbody>
 </table>
@@ -99,9 +107,9 @@ backtest.report()
   <tbody>
     <tr>
       <th>sharpes</th>
-      <td>0.52</td>
+      <td>0.62</td>
       <td>0.13</td>
-      <td>0.54</td>
+      <td>0.62</td>
     </tr>
   </tbody>
 </table>
@@ -130,9 +138,9 @@ backtest.report()
   <tbody>
     <tr>
       <th>Stats</th>
-      <td>0.41</td>
-      <td>0.32</td>
-      <td>56.0</td>
+      <td>0.31</td>
+      <td>0.56</td>
+      <td>47.0</td>
     </tr>
   </tbody>
 </table>
@@ -146,9 +154,6 @@ backtest.report()
 
 
 ## Momentum Comparison
-
-
-    RuntimeWarning: divide by zero encountered in scalar divide
 
 
 
@@ -165,10 +170,10 @@ backtest.report()
   <tbody>
     <tr>
       <th>Momentum Stats</th>
-      <td>0.52</td>
-      <td>0.52</td>
+      <td>0.62</td>
+      <td>0.62</td>
       <td>1.0</td>
-      <td>-inf</td>
+      <td>0.0</td>
     </tr>
   </tbody>
 </table>
@@ -176,7 +181,7 @@ backtest.report()
 
 
     
-![png](readme_files/readme_1_20.png)
+![png](readme_files/readme_1_19.png)
     
 
 
@@ -186,7 +191,7 @@ backtest.report()
 
 
     
-![png](readme_files/readme_1_22.png)
+![png](readme_files/readme_1_21.png)
     
 
 
