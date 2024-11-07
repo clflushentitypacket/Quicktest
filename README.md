@@ -8,12 +8,6 @@ Instructions: Simply input signal and price dataframes and execute the report me
 ```python
 from quicktest import Quicktest
 import pandas as pd
-```
-
-
-```python
-from quicktest import Quicktest
-import pandas as pd
 signals = pd.read_csv("momentum_signal.csv", index_col=0)
 prices = pd.read_csv("adjusted_price.csv", index_col=0)
 
