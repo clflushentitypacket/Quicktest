@@ -2,7 +2,7 @@
 
 Quicktest is a lightweight backtesting engine for quickly prototyping trading strategies.
 
-Instructions: Simply input signal and price dataframes and execute the report method in a Jupyter notebook for a lightning fast backtest. Below is a simple example of a price momentum strategy backtest which you may find in the examples folder
+Instructions: Simply input signal and price dataframes and execute the report method in a Jupyter notebook for a lightning fast backtest. Below is a simple example of a price momentum strategy backtest on energy future markets which you may find in the examples folder
 
 # Backtest
 ```python
